@@ -1,6 +1,6 @@
 {
   "type": "dark",
-  "name": "Electron Color Theme",
+  "name": "Color Theme",
   "colors": {
     "activityBar.background": "#141820",
     "activityBarBadge.background": "#4B76CF",
@@ -8,16 +8,17 @@
     "diffEditor.insertedTextBackground": "#66f0c213",
     "dropdown.background": "#141820",
     "editor.background": "#212836",
-    "editor.foreground": "#97a7c8",
+    "editor.foreground": "#36b1da",
     "editor.lineHighlightBackground": "#99bbff0a",
     "editor.selectionBackground": "#e6eeff21",
-    "editor.wordHighlightBackground": "#343F56",
+    "editor.wordHighlightBackground": "#343F5680",
     "editorCursor.foreground": "#f30f4c",
     "editorGroup.border": "#1A1F2E",
     "editorGroupHeader.tabsBackground": "#1C212E",
     "editorGutter.addedBackground": "#308E68",
     "editorGutter.modifiedBackground": "#938464",
-    "editorIndentGuide.background": "#97a7c826",
+    "editorIndentGuide.background1": "#97a7c826",
+    "editorIndentGuide.activeBackground1": "#97a7c850",
     "editorLineNumber.activeForeground": "#818ca6",
     "editorLineNumber.foreground": "#3D4D67",
     "editorSuggestWidget.background": "#141820",
@@ -46,7 +47,7 @@
     "scrollbarSlider.hoverBackground": "#ffffff22",
     "sideBar.background": "#1C212E",
     "sideBarSectionHeader.background": "#141820",
-    "sideBarTitle.foreground": "#f44747",
+    "sideBarTitle.foreground": "#0bdde8",
     "statusBar.background": "#212836",
     "statusBar.border": "#1A1F2E",
     "statusBar.foreground": "#818CA6",
@@ -84,7 +85,7 @@
       "name": "String",
       "scope": "string",
       "settings": {
-        "foreground": "#f6f6f5"
+        "foreground": "#7faf6f"
       }
     },
     {
@@ -138,14 +139,15 @@
       "name": "Variable",
       "scope": "variable",
       "settings": {
-        "foreground": "#B7C6DA"
+        "foreground": "#56B6C2"
       }
     },
     {
       "name": "Keyword",
       "scope": "keyword",
       "settings": {
-        "foreground": "#E95293"
+        "foreground": "#E95293",
+        "fontStyle": "italic"
       }
     },
     {
@@ -159,14 +161,15 @@
       "name": "Storage type",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#D59DF6"
+        "foreground": "#D59DF6",
+        "fontStyle": "italic"
       }
     },
     {
       "name": "Class name",
-      "scope": "entity.name.class",
+      "scope": "entity.name.class, entity.name.type.class, support.class",
       "settings": {
-        "foreground": "#82C600"
+        "foreground": "#FF7F50"
       }
     },
     {
@@ -181,14 +184,49 @@
       "name": "Function argument",
       "scope": "variable.parameter",
       "settings": {
-        "foreground": "#85AC3A"
+        "foreground": "#4DB1D8"
+      }
+    },
+    {
+      "name": "Struct",
+      "scope": "entity.name.type.struct, storage.type.struct",
+      "settings": {
+        "foreground": "#FF7F50"
+      }
+    },
+    {
+      "name": "Enum",
+      "scope": "entity.name.type.enum, storage.type.enum",
+      "settings": {
+        "foreground": "#FF7F50"
+      }
+    },
+    {
+      "name": "Property",
+      "scope": "variable.other.property, variable.other.object.property, support.type.property-name",
+      "settings": {
+        "foreground": "#42A5F5"
+      }
+    },
+    {
+      "name": "Module",
+      "scope": "entity.name.type.module, support.other.module",
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Namespace",
+      "scope": "entity.name.namespace, entity.name.type.namespace",
+      "settings": {
+        "fontStyle": "underline"
       }
     },
     {
       "name": "Tag name",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#E76572"
+        "foreground": "#36b1da"
       }
     },
     {
@@ -508,7 +546,7 @@
         "foreground": "#b267e6"
       }
     },
-    { // Markdown Starts Here!
+    {
       "scope": "entity.name.section.markdown",
       "settings": {
         "foreground": "#EF596F"
@@ -651,7 +689,9 @@
       }
     },
     {
-      "scope": ["text.html.markdown entity.name.tag.yaml"],
+      "scope": [
+        "text.html.markdown entity.name.tag.yaml"
+      ],
       "settings": {
         "foreground": "#97a7c8"
       }

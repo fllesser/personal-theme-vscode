@@ -1,11 +1,18 @@
 {
     "name": "personal-theme",
     "displayName": "Personal Theme",
-    "description": "Dark Color Theme based on Electron Highlighter for Atom",
+    "description": "Dark Color Theme based on Highlighter for Atom",
     "version": "0.3.0",
     "publisher": "fllesser",
     "engines": {
-        "vscode": "^1.10.0"
+        "vscode": "^1.80.0",
+        "node": ">=18.0.0",
+        "npm": ">=9.0.0"
+    },
+    "scripts": {
+        "package": "npx vsce package --out personal-theme.vsix",
+        "code-install": "npx vsce package --out personal-theme.vsix && code --install-extension personal-theme.vsix",
+        "ant-install": "npx vsce package --out personal-theme.vsix && Antigravity --install-extension personal-theme.vsix"
     },
     "categories": [
         "Themes"
